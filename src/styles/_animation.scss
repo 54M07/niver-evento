@@ -1,0 +1,64 @@
+
+.balao {
+    width: 900px;
+    height: 1350px;
+    background-image: url('/src/images/balao.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: subir-balao 8s linear infinite;
+    z-index: -1;
+}
+.balao1 {
+    background-image: url(/src/images/balao1.png);
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.balao2 {
+    background-image: url(/src/images/balao2.png);
+    left: 40%;
+    animation-delay: 1s;
+}
+
+.balao3 {
+    background-image: url(/src/images/balao3.png);
+    left: 70%;
+    animation-delay: 2s;
+}
+.balao4 {
+    background-image: url(/src/images/balao4.png);
+    right: 10%;
+    animation-delay: 3s;
+}
+.balao5 {
+    background-image: url(/src/images/balao5.png);
+    right: 40%;
+    animation-delay: 4s;
+}
+.balao6 {
+    background-image: url(/src/images/balao6.png);
+    right: 70%;
+    animation-delay: 5s;
+}
+
+@keyframes subir-balao {
+    0% {
+        transform: translateX(-50%) translateY(100vh) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(calc(50vh * var(--random-y))) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0) rotate(0deg);
+    }
+}
+
+:root {
+    --random-y: calc(0.6 + 0.4 * random());
+}

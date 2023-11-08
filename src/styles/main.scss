@@ -1,0 +1,60 @@
+@use'infos-bar';
+@use'contador';
+@use'animation';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Agbalumo, sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(6, 3, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  margin-top: 64px;
+  padding: 32px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+p {
+  color: #fff;
+  margin-top: 8px;
+  font-size: 28px;
+  text-align: left;
+}
+
+.imagens {
+  padding: 18px;
+  max-height: 148px;
+}
+
+@media only screen and (max-width: 640px) {
+  .balao {
+      animation: none;
+      display: none;
+  }
+  section {
+    display: block;
+    width: 100%;
+  }
+
+  .contador {
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+  }
+}

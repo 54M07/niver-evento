@@ -1,0 +1,42 @@
+.contador {
+  display: flex;
+  margin: 18px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(55, 13, 109);
+  border-bottom: 1px solid rgb(55, 13, 109);
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  &__numero {
+    border: 1px solid #390ba3;
+    border-radius: 1px 155px 1px 112px;
+    padding: 12px;
+    background-image: linear-gradient(to top, #921be2 -39%, #541eb8 100%);
+    color: #fff;
+    font-size: 38px;
+  }
+  &__texto {
+    padding-right: 12px;
+    padding-left: 12px;
+    color: #fff;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  .contador {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contador__item {
+    width: 50%;
+  }
+}

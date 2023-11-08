@@ -1,0 +1,51 @@
+.infos-bar {
+    &__sobre {
+        display: block;
+
+
+        &__img {
+            display: flex;
+            justify-content: center;
+
+            @media(max-width: 640px) {
+                img {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+    .endereco {
+
+        &__infos {
+            margin-top: 12px;
+        }
+
+        &__button {
+            border: 1px solid;
+            border-radius: 4px;
+            margin-top: 12px;
+            padding: 4px;
+            cursor: pointer;
+            color: #fff;
+            background-color: rgb(55, 13, 109);
+            font-size: 28px;
+
+            &:hover {
+                background-color: rgb(57, 26, 71);
+            }
+        }
+
+        div.btn {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    
+@media only screen and (max-width: 640px) {
+    .btn {
+display: block;
+    }
+  }

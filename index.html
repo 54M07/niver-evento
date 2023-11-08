@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/dist/css/main.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="infos-bar">
+                <div class="infos-bar__sobre">
+                    <div class="infos-bar__sobre__img">
+                        <img class="imagens" src="/src/images/cone-festa1.png" alt="cone-chapeu">
+                        <img class="imagens" src="/src/images/baloes.png" alt="cone-chapeu">
+                        <img class="imagens" src="/src/images/cone-festa.png" alt="cone-chapeu">
+                    </div>
+                    <p> Sua presença é mais do que bem-vinda na minha festa de aniversário! Vamos agitar juntos, com
+                        muita música, comida deliciosa e bebidas refrescantes!
+                    </p>
+                    <p>Vem fazer parte
+                        desse momento especial comigo.</p>
+                    <p>
+                        Confirme assim que puder
+                        para que eu possa garantir que tudo esteja perfeito para a nossa festa incrível! Estou super
+                        empolgado para te ver lá!
+                    </p>
+                </div>
+            </div>
+
+            <div class="endereco">
+                <div class="endereco__infos">
+                    <p>
+                        Localização: Casa da Festa - Rua das Alegrias, 123
+                    </p>
+                    <p>
+                        Quando: 26/12/2023 às 19hrs
+                    </p>
+                </div>
+                <div class="btn">
+                    <button type="button" class="endereco__button" onclick="confirmarPresenca()">
+                        Confirme sua presença
+                    </button>
+                    <p>
+                        So faltam:
+                    </p>
+                </div>
+            </div>
+            <div class="contador">
+                <img class="imagens" src="/src/images/relogio.png" alt="relogio">
+                <div class="contador__item">
+                    <span id="dias" class="contador__numero"></span>
+                    <span class="contador__texto">dias</span>
+                </div>
+                <div class="contador__item">
+                    <span id="horas" class="contador__numero"></span>
+                    <span class="contador__texto">horas</span>
+                </div>
+                <div class="contador__item">
+                    <span id="minutos" class="contador__numero"></span>
+                    <span class="contador__texto">minutos</span>
+                </div>
+                <div class="contador__item">
+                    <span id="segundos" class="contador__numero"></span>
+                    <span class="contador__texto">segundos</span>
+                    <img class="imagens" src="/src/images/relogio1.png" alt="relogio">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="balao balao1"></div>
+    <div class="balao balao2"></div>
+    <div class="balao balao3"></div>
+    <div class="balao balao4"></div>
+    <div class="balao balao5"></div>
+    <div class="balao balao6"></div>
+
+    <script src="/src/scripts/main.js"></script>
+</body>
+
+</html>
